@@ -42,6 +42,10 @@
     "@typescript-eslint/no-empty-function": "off",
     "@typescript-eslint/no-empty-interface": "error",
     "no-console": [2, { "allow": ["warn", "error"] }],
+    "import/no-extraneous-dependencies": [
+      "error",
+      { "devDependencies": ["**/*.test.js", "**/*.spec.js"] }
+    ],
     "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }]
   }
 }
